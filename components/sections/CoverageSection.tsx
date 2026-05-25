@@ -1,44 +1,54 @@
+import Image from "next/image";
 import { COVERAGE_CITIES } from "@/lib/constants";
 
 export default function CoverageSection() {
   return (
     <section className="bg-ice">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid lg:grid-cols-2 gap-14 items-center">
-          <div>
-            <p className="text-primary font-bold tracking-[0.2em] text-sm mb-3 uppercase">
-              Zona dostave
-            </p>
-            <h2
-              className="font-heading text-4xl sm:text-5xl font-bold text-navy uppercase mb-5"
-              style={{ fontFamily: "var(--font-barlow), sans-serif" }}
-            >
-              GDE ISPORUČUJEMO
-            </h2>
-            <p className="text-navy/60 mb-8 leading-relaxed">
-              LED PLUS pokriva Zaječar i celu Istočnu Srbiju. Naša vozila su
-              svakodnevno na terenu kako bi vam donela svež led na vreme.
-              Kontaktirajte nas i dogovorimo isporuku.
-            </p>
+        <div className="grid lg:grid-cols-2 gap-8 items-start">
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-              {COVERAGE_CITIES.map((city) => (
-                <div
-                  key={city}
-                  className="flex items-center gap-2 bg-white rounded-xl px-4 py-3 shadow-sm border border-navy/8"
-                >
-                  <LocationDot />
-                  <span className="font-semibold text-navy text-sm">
-                    {city}
-                  </span>
-                </div>
-              ))}
-            </div>
+          {/* Levo: slika */}
+          <div className="relative h-[500px] lg:h-full lg:min-h-[600px] rounded-2xl overflow-hidden">
+            <Image
+              src="/led2kg.png"
+              alt="LED Plus 2kg pakovanje"
+              fill
+              className="object-contain scale-[1.6] origin-center"
+            />
           </div>
 
-          <div className="relative">
-            <div className="absolute -inset-4 bg-primary/5 rounded-3xl" />
-            <div className="relative bg-navy rounded-2xl p-8 text-white shadow-xl">
+          {/* Desno: sadržaj */}
+          <div className="flex flex-col gap-8">
+            <div>
+              <p className="text-primary font-bold tracking-[0.2em] text-sm mb-3 uppercase">
+                Zona dostave
+              </p>
+              <h2
+                className="font-heading text-4xl sm:text-5xl font-bold text-navy uppercase mb-5"
+                style={{ fontFamily: "var(--font-barlow), sans-serif" }}
+              >
+                GDE ISPORUČUJEMO
+              </h2>
+              <p className="text-navy/60 mb-6 leading-relaxed">
+                LED PLUS pokriva Zaječar i celu Istočnu Srbiju. Naša vozila su
+                svakodnevno na terenu kako bi vam donela svež led na vreme.
+                Kontaktirajte nas i dogovorimo isporuku.
+              </p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                {COVERAGE_CITIES.map((city) => (
+                  <div
+                    key={city}
+                    className="flex items-center gap-2 bg-white rounded-xl px-4 py-3 shadow-sm border border-navy/8"
+                  >
+                    <LocationDot />
+                    <span className="font-semibold text-navy text-sm">{city}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Zašto izabrati nas */}
+            <div className="bg-navy rounded-2xl p-8 text-white shadow-xl">
               <h3
                 className="font-heading text-2xl font-bold text-white uppercase mb-6"
                 style={{ fontFamily: "var(--font-barlow), sans-serif" }}
@@ -52,9 +62,7 @@ export default function CoverageSection() {
                       {r.icon}
                     </div>
                     <div>
-                      <div className="font-bold text-white text-sm mb-0.5">
-                        {r.title}
-                      </div>
+                      <div className="font-bold text-white text-sm mb-0.5">{r.title}</div>
                       <div className="text-white/55 text-sm">{r.desc}</div>
                     </div>
                   </li>
@@ -62,6 +70,7 @@ export default function CoverageSection() {
               </ul>
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -93,13 +102,7 @@ const reasons = [
 
 function LocationDot() {
   return (
-    <svg
-      width="14"
-      height="14"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      className="text-primary shrink-0"
-    >
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" className="text-primary shrink-0">
       <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
     </svg>
   );
