@@ -1,5 +1,5 @@
 const clients = [
-  { icon: <MarketIcon />, label: "Marketi" },
+  { icon: <MarketIcon />, label: "Marketi", href: "#nasi-partneri" },
   { icon: <RestaurantIcon />, label: "Restorani" },
   { icon: <CafeIcon />, label: "Kafići" },
   { icon: <ClubIcon />, label: "Noćni klubovi" },
@@ -23,25 +23,36 @@ export default function ClientTypesSection() {
           >
             OD BARA DO FESTIVALA
           </h2>
-          <p className="text-white/45 mt-3 max-w-md mx-auto">
+          <p className="text-white/70 mt-3 max-w-md mx-auto">
             Kristalno čist led za svaku namenu i svako mesto
           </p>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3">
-          {clients.map((c) => (
-            <div
-              key={c.label}
-              className="flex flex-col items-center gap-3 py-5 px-3 rounded-xl bg-white/[0.04] border border-white/[0.07] hover:border-primary/40 hover:bg-primary/10 transition-all duration-200 group"
-            >
-              <div className="text-white/50 group-hover:text-accent transition-colors">
-                {c.icon}
-              </div>
-              <span className="text-white/70 group-hover:text-white transition-colors text-sm font-semibold text-center leading-tight">
-                {c.label}
-              </span>
-            </div>
-          ))}
+          {clients.map((c) => {
+            const inner = (
+              <>
+                <div className="text-white/80 group-hover:text-accent transition-colors">
+                  {c.icon}
+                </div>
+                <span className="text-white/90 group-hover:text-white transition-colors text-sm font-semibold text-center leading-tight">
+                  {c.label}
+                </span>
+                {c.href && (
+                  <span className="text-white text-[11px] font-semibold transition-colors flex items-center gap-0.5">
+                    Vidi više
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+                  </span>
+                )}
+              </>
+            );
+            const cls = "flex flex-col items-center gap-3 py-5 px-3 rounded-xl bg-white/[0.04] border border-white/[0.07] hover:border-primary/40 hover:bg-primary/10 transition-all duration-200 group";
+            return c.href ? (
+              <a key={c.label} href={c.href} className={cls}>{inner}</a>
+            ) : (
+              <div key={c.label} className={cls}>{inner}</div>
+            );
+          })}
         </div>
       </div>
     </section>

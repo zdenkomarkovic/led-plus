@@ -21,7 +21,7 @@ const partners = [
 
 export default function PartnersSection() {
   return (
-    <section className="bg-navy-card">
+    <section id="nasi-partneri" className="bg-navy-card">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center mb-14">
           <p className="text-accent font-bold tracking-[0.2em] text-sm mb-3 uppercase">

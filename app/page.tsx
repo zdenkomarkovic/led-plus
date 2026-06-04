@@ -4,7 +4,6 @@ import Footer from "@/components/layout/Footer";
 import HeroSection from "@/components/sections/HeroSection";
 import FeaturesSection from "@/components/sections/FeaturesSection";
 import PackagingSection from "@/components/sections/PackagingSection";
-import AboutSection from "@/components/sections/AboutSection";
 import CoverageSection from "@/components/sections/CoverageSection";
 import PartnersSection from "@/components/sections/PartnersSection";
 import ClientTypesSection from "@/components/sections/ClientTypesSection";
@@ -30,10 +29,8 @@ export default function HomePage() {
         <ClientTypesSection />
         {/* SVETLA sekcija */}
         <PackagingSection />
-        {/* TAMNA sekcija */}
-        <AboutSection />
         {/* SVETLA sekcija */}
-        <CoverageSection />
+        {/* <CoverageSection /> */}
         {/* TAMNA sekcija */}
         <PartnersSection />
         {/* SVETLA sekcija */}

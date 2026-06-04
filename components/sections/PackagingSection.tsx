@@ -1,12 +1,8 @@
 import Image from "next/image";
-import { WHATSAPP_URL } from "@/lib/constants";
-
 const features2kg = [
   "Kristalno čist, bez mirisa i aditiva",
-  "Idealno za barove, kafiće i restorane",
   "Praktično za nošenje – ručka na kesi",
   "Dostupno u Zaječaru i okolini",
-  "Direktna dostava na vrata",
 ];
 
 const features4kg = [
@@ -64,7 +60,7 @@ export default function PackagingSection() {
                 </span>
               </div>
               <p className="text-navy/60 mb-6">
-                Savršeno za restorane, kafiće, barove i svakodnevnu upotrebu.
+                Savršeno za svakodnevnu upotrebu.
                 Lako za nošenje, ručka na kesi. Dostupno u prodavnicama i
                 direktnom dostavom.
               </p>
@@ -76,15 +72,6 @@ export default function PackagingSection() {
                   </li>
                 ))}
               </ul>
-              <a
-                href={WHATSAPP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 bg-primary hover:bg-primary-hover text-white font-bold py-3.5 rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-primary/25 uppercase tracking-wide"
-                style={{ fontFamily: "var(--font-barlow), sans-serif" }}
-              >
-                NARUČI NA WHATSAPP
-              </a>
             </div>
           </div>
 
@@ -123,15 +110,6 @@ export default function PackagingSection() {
                   </li>
                 ))}
               </ul>
-              <a
-                href={WHATSAPP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 border border-white/30 hover:border-accent hover:text-accent text-white font-bold py-3.5 rounded-xl transition-all duration-200 uppercase tracking-wide"
-                style={{ fontFamily: "var(--font-barlow), sans-serif" }}
-              >
-                NARUČI NA WHATSAPP
-              </a>
             </div>
           </div>
         </div>
