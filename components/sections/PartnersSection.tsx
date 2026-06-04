@@ -2,21 +2,29 @@ import Image from "next/image";
 
 const partners = [
   {
+    src: "/tekijanka.webp",
+    alt: "LED Plus u Tekijanka marketima – led za rashladu pića",
+  },
+  {
+    src: "/tis.webp",
+    alt: "LED Plus u Tis marketima – led za rashladu pića",
+  },
+  {
     src: "/1000008350.png",
-    alt: "LED Plus u Sokopromer marketima – led za rashladu pića",
+    alt: "LED Plus u Sokopromet marketima – led za rashladu pića",
   },
   {
     src: "/1000008378.png",
     alt: "LED Plus snabdeva Buna Festival – dostava leda na event",
   },
-  {
-    src: "/1000008352.png",
-    alt: "LED Plus u Beli Dren marketu – led za poneti",
-  },
-  {
-    src: "/1000008711.png",
-    alt: "LED Plus u Marketi Bogdanović – ugostiteljski led",
-  },
+  // {
+  //   src: "/1000008352.png",
+  //   alt: "LED Plus u Beli Dren marketu – led za poneti",
+  // },
+  // {
+  //   src: "/1000008711.png",
+  //   alt: "LED Plus u Marketi Bogdanović – ugostiteljski led",
+  // },
 ];
 
 export default function PartnersSection() {
@@ -34,17 +42,14 @@ export default function PartnersSection() {
             NAŠI PARTNERI
           </h2>
           <p className="text-white/50 max-w-xl mx-auto">
-            Veruju nam marketi, noćni klubovi, festivali i ugostiteljski objekti
-            širom Istočne Srbije.
+            Veruju nam marketi, noćni klubovi, festivali i ugostiteljski objekti širom Istočne
+            Srbije.
           </p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {partners.map((p) => (
-            <div
-              key={p.src}
-              className="relative rounded-xl overflow-hidden group aspect-square"
-            >
+            <div key={p.src} className="relative rounded-xl overflow-hidden group aspect-square">
               <Image
                 src={p.src}
                 alt={p.alt}
