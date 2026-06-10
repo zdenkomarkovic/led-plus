@@ -2,29 +2,17 @@ import Image from "next/image";
 
 const partners = [
   {
-    src: "/tekijanka.webp",
-    alt: "LED Plus u Tekijanka marketima – led za rashladu pića",
-  },
-  {
-    src: "/tis.webp",
+    src: "/tis.jpg",
     alt: "LED Plus u Tis marketima – led za rashladu pića",
   },
   {
-    src: "/1000008350.png",
-    alt: "LED Plus u Sokopromet marketima – led za rashladu pića",
+    src: "/tekijanka.jpg",
+    alt: "LED Plus u Tekijanka marketima – led za rashladu pića",
   },
   {
-    src: "/1000008378.png",
-    alt: "LED Plus snabdeva Buna Festival – dostava leda na event",
+    src: "/sova.jpg",
+    alt: "LED Plus u Sova marketima – led za rashladu pića",
   },
-  // {
-  //   src: "/1000008352.png",
-  //   alt: "LED Plus u Beli Dren marketu – led za poneti",
-  // },
-  // {
-  //   src: "/1000008711.png",
-  //   alt: "LED Plus u Marketi Bogdanović – ugostiteljski led",
-  // },
 ];
 
 export default function PartnersSection() {
@@ -47,7 +35,7 @@ export default function PartnersSection() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid sm:grid-cols-3 gap-5">
           {partners.map((p) => (
             <div key={p.src} className="relative rounded-xl overflow-hidden group aspect-square">
               <Image
@@ -56,7 +44,7 @@ export default function PartnersSection() {
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-navy/30 group-hover:bg-navy/10 transition-colors duration-300" />
+              <div className="absolute inset-0 bg-navy/10 group-hover:bg-navy/0 transition-colors duration-300" />
             </div>
           ))}
         </div>

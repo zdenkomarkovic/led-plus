@@ -9,6 +9,7 @@ import PartnersSection from "@/components/sections/PartnersSection";
 import ClientTypesSection from "@/components/sections/ClientTypesSection";
 import DeliverySection from "@/components/sections/DeliverySection";
 import ContactSection from "@/components/sections/ContactSection";
+import ProizvodnjaDoPazaraSection from "@/components/sections/ProizvodnjaDoPazaraSection";
 
 export const metadata = buildMetadata({
   title: "LED Plus – Kristalno čist led za rashladu pića",
@@ -32,6 +33,7 @@ export default function HomePage() {
         {/* SVETLA sekcija */}
         {/* <CoverageSection /> */}
         {/* TAMNA sekcija */}
+        <ProizvodnjaDoPazaraSection />
         <PartnersSection />
         {/* SVETLA sekcija */}
         <DeliverySection />

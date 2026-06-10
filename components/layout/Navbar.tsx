@@ -25,20 +25,18 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled || menuOpen
-          ? "bg-navy-deep shadow-lg shadow-black/40"
-          : "bg-transparent"
+        scrolled || menuOpen ? "bg-navy-deep shadow-lg shadow-black/40" : "bg-transparent"
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 md:h-16 flex items-center justify-between gap-2">
+      <nav className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-1 flex items-center justify-between gap-2">
         {/* Logo */}
         <Link href="#pocetna" className="flex items-center gap-2 shrink-0">
           <Image
             src="/logo.png"
             alt="LED Plus logo"
-            width={48}
-            height={48}
-            className="h-8 md:h-11 w-auto"
+            width={96}
+            height={96}
+            className="h-16 md:h-22 w-auto"
           />
           <div className="leading-tight">
             <div
@@ -47,7 +45,9 @@ export default function Navbar() {
             >
               LED PLUS
             </div>
-            <div className={`text-[10px] md:text-xs tracking-widest hidden sm:block ${scrolled || menuOpen ? "text-accent" : "text-primary"}`}>
+            <div
+              className={`text-[10px] md:text-xs tracking-widest hidden sm:block ${scrolled || menuOpen ? "text-accent" : "text-primary"}`}
+            >
               LED ZA PONETI
             </div>
           </div>

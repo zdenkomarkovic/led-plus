@@ -28,9 +28,9 @@ export default function Footer() {
               <Image
                 src="/logo.png"
                 alt="LED Plus"
-                width={48}
-                height={48}
-                className="h-12 w-auto"
+                width={96}
+                height={96}
+                className="h-24 w-auto"
               />
               <div>
                 <div
@@ -39,14 +39,12 @@ export default function Footer() {
                 >
                   LED PLUS
                 </div>
-                <div className="text-xs text-accent tracking-widest">
-                  LED ZA PONETI
-                </div>
+                <div className="text-xs text-accent tracking-widest">LED ZA PONETI</div>
               </div>
             </Link>
             <p className="text-sm leading-relaxed">
-              Kristalno čist led za rashladu pića. Proizvodnja i distribucija za
-              ugostiteljske objekte i krajnje korisnike u Istočnoj Srbiji.
+              Kristalno čist led za rashladu pića. Proizvodnja i distribucija za ugostiteljske
+              objekte i krajnje korisnike u Istočnoj Srbiji.
             </p>
             <div className="flex gap-4 mt-5">
               <a
@@ -89,10 +87,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm hover:text-white transition-colors"
-                  >
+                  <Link href={link.href} className="text-sm hover:text-white transition-colors">
                     {link.label}
                   </Link>
                 </li>
@@ -120,10 +115,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <EmailIcon />
-                <a
-                  href={`mailto:${EMAIL}`}
-                  className="hover:text-white transition-colors"
-                >
+                <a href={`mailto:${EMAIL}`} className="hover:text-white transition-colors">
                   {EMAIL}
                 </a>
               </li>

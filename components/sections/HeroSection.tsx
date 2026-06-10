@@ -31,7 +31,7 @@ export default function HeroSection() {
       </div>
 
       {/* Desktop sadržaj */}
-      <div className="hidden md:block relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pb-20 w-full">
+      <div className="hidden md:flex items-end justify-between relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pb-20 w-full">
         <div className="max-w-xl">
           <div className="inline-flex items-center gap-2 bg-primary/15 border border-primary/30 rounded-full px-4 py-1.5 mb-6">
             <SnowflakeIcon />
@@ -75,6 +75,20 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
+
+      </div>
+
+      {/* Badge desktop – gore levo unutar kontejnera */}
+      <div className="hidden md:block absolute top-32 inset-x-0 z-10">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <Image
+            src="/bedz.jpg"
+            alt="LED Plus kvalitet"
+            width={85}
+            height={85}
+            className="rounded-full shadow-xl"
+          />
+        </div>
       </div>
 
       {/* Mobilni: naslov gore, dugme + tekst dole */}
@@ -95,23 +109,32 @@ export default function HeroSection() {
           </h1>
         </div>
 
-        {/* Dole: dugme + tekst */}
-        <div className="mt-auto px-4 pb-[30px] flex flex-col gap-3">
-          <div>
-            <a
-              href="#kontakt"
-              className="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white font-bold px-5 py-2.5 rounded transition-colors uppercase tracking-wide text-sm"
-              style={{ fontFamily: "var(--font-barlow), sans-serif" }}
-            >
-              KONTAKTIRAJTE NAS
-              <ArrowIcon />
-            </a>
+        {/* Dole: dugme + tekst + badge */}
+        <div className="mt-auto px-4 pb-[30px] flex items-end justify-between gap-3">
+          <div className="flex flex-col gap-3">
+            <div>
+              <a
+                href="#kontakt"
+                className="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white font-bold px-5 py-2.5 rounded transition-colors uppercase tracking-wide text-sm"
+                style={{ fontFamily: "var(--font-barlow), sans-serif" }}
+              >
+                KONTAKTIRAJTE NAS
+                <ArrowIcon />
+              </a>
+            </div>
+            <p className="text-navy font-semibold text-sm leading-relaxed">
+              LED PLUS obezbeđuje vrhunski kvalitet leda za restorane, klubove,
+              kafiće, prodavnice i sve koji žele savršeno rashlađeno piće.
+              Isporuka u Zaječaru i celoj Istočnoj Srbiji.
+            </p>
           </div>
-          <p className="text-navy font-semibold text-sm leading-relaxed">
-            LED PLUS obezbeđuje vrhunski kvalitet leda za restorane, klubove,
-            kafiće, prodavnice i sve koji žele savršeno rashlađeno piće.
-            Isporuka u Zaječaru i celoj Istočnoj Srbiji.
-          </p>
+          <Image
+            src="/bedz.jpg"
+            alt="LED Plus kvalitet"
+            width={75}
+            height={75}
+            className="rounded-full shadow-xl shrink-0"
+          />
         </div>
       </div>
     </section>

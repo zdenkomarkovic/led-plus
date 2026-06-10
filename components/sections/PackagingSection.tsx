@@ -27,8 +27,8 @@ export default function PackagingSection() {
             NAŠA PAKOVANJA
           </h2>
           <p className="text-navy/60 max-w-xl mx-auto">
-            Praktična pakovanja za kućnu upotrebu i za profesionalce u
-            ugostiteljstvu. Kristalno čist led, uvek spreman.
+            Praktična pakovanja za kućnu upotrebu i za profesionalce u ugostiteljstvu. Kristalno
+            čist led, uvek spreman.
           </p>
         </div>
 
@@ -38,14 +38,23 @@ export default function PackagingSection() {
             <div className="absolute top-4 right-4 z-10 bg-primary text-white text-sm font-bold px-3 py-1 rounded-full">
               NAJPOPULARNIJE
             </div>
-            <div className="flex items-center justify-center py-10 px-8">
+            <div className="relative flex items-center justify-center py-10 px-8">
               <Image
-                src="/1000008348.png"
+                src="/2kg.jpg"
                 alt="LED Plus 2kg – ugostiteljski led za rashladu pića"
                 width={340}
                 height={340}
                 className="h-64 w-auto object-contain rounded-lg"
               />
+              <div className="absolute bottom-4 right-4">
+                <Image
+                  src="/bedz.jpg"
+                  alt="LED Plus kvalitet"
+                  width={80}
+                  height={80}
+                  className="rounded-full shadow-lg"
+                />
+              </div>
             </div>
             <div className="p-8 flex-1 flex flex-col">
               <div className="flex items-baseline gap-3 mb-4">
@@ -55,14 +64,11 @@ export default function PackagingSection() {
                 >
                   PAKOVANJE 2KG
                 </h3>
-                <span className="text-primary font-bold text-lg">
-                  Ugostiteljski led
-                </span>
+                <span className="text-primary font-bold text-lg">Ugostiteljski led</span>
               </div>
               <p className="text-navy/60 mb-6">
-                Savršeno za svakodnevnu upotrebu.
-                Lako za nošenje, ručka na kesi. Dostupno u prodavnicama i
-                direktnom dostavom.
+                Savršeno za svakodnevnu upotrebu. Lako za nošenje, ručka na kesi. Dostupno u
+                prodavnicama i direktnom dostavom.
               </p>
               <ul className="space-y-2 mb-8 flex-1">
                 {features2kg.map((f) => (
@@ -77,14 +83,23 @@ export default function PackagingSection() {
 
           {/* 4kg */}
           <div className="relative bg-navy rounded-2xl overflow-hidden shadow-xl flex flex-col">
-            <div className="flex items-center justify-center py-10 px-8">
+            <div className="relative flex items-center justify-center py-10 px-8">
               <Image
-                src="/1000008904.png"
+                src="/4kg.png"
                 alt="LED Plus 4kg – kristalno čist ugostiteljski led za rashladu pića"
                 width={340}
                 height={340}
                 className="h-64 w-auto object-contain rounded-lg"
               />
+              <div className="absolute bottom-4 right-4">
+                <Image
+                  src="/bedz.jpg"
+                  alt="LED Plus kvalitet"
+                  width={80}
+                  height={80}
+                  className="rounded-full shadow-lg"
+                />
+              </div>
             </div>
             <div className="p-8 flex-1 flex flex-col">
               <div className="flex items-baseline gap-3 mb-4">
@@ -94,13 +109,11 @@ export default function PackagingSection() {
                 >
                   PAKOVANJE 4KG
                 </h3>
-                <span className="text-accent font-bold text-lg">
-                  Veće količine
-                </span>
+                <span className="text-accent font-bold text-lg">Veće količine</span>
               </div>
               <p className="text-white/55 mb-6">
-                Idealno za veće ugostiteljske objekte kojima je potrebna veća
-                količina leda. Ekonomičnija opcija, isti kvalitet.
+                Idealno za veće ugostiteljske objekte kojima je potrebna veća količina leda.
+                Ekonomičnija opcija, isti kvalitet.
               </p>
               <ul className="space-y-2 mb-8 flex-1">
                 {features4kg.map((f) => (
