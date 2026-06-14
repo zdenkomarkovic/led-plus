@@ -14,8 +14,8 @@ const steps = [
   },
   {
     num: "03",
-    title: "Dostava na vrata",
-    desc: "Svež, kristalno čist led stiže direktno do vaše lokacije.",
+    title: "Dostava u vašim marketima",
+    desc: "Svež, kristalno čist led stiže direktno do vašeg marketa.",
   },
 ];
 
@@ -82,7 +82,7 @@ export default function DeliverySection() {
 
           <div className="relative rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="/Gemini_Generated_Image_2zfz9e2zfz9e2zfz.png"
+              src="/IMG-7598692a31aeb12b2f901a1a54124254-V.jpg"
               alt="LED Plus dostava – vozilo isporučuje led na event"
               width={600}
               height={500}
@@ -106,6 +106,7 @@ export default function DeliverySection() {
     </section>
   );
 }
+
 
 function PhoneIcon() {
   return (

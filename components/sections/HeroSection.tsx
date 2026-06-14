@@ -50,7 +50,6 @@ export default function HeroSection() {
           <p className="text-navy font-semibold text-lg leading-relaxed mb-8">
             LED PLUS obezbeđuje vrhunski kvalitet leda za restorane, klubove,
             kafiće, prodavnice i sve koji žele savršeno rashlađeno piće.
-            Isporuka u Zaječaru i celoj Istočnoj Srbiji.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -76,11 +75,6 @@ export default function HeroSection() {
           </div>
         </div>
 
-      </div>
-
-      {/* Badge desktop – gore levo unutar kontejnera */}
-      <div className="hidden md:block absolute top-32 inset-x-0 z-10">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <Image
             src="/bedz.jpg"
             alt="LED Plus kvalitet"
@@ -88,7 +82,7 @@ export default function HeroSection() {
             height={85}
             className="rounded-full shadow-xl"
           />
-        </div>
+
       </div>
 
       {/* Mobilni: naslov gore, dugme + tekst dole */}
@@ -125,7 +119,6 @@ export default function HeroSection() {
             <p className="text-navy font-semibold text-sm leading-relaxed">
               LED PLUS obezbeđuje vrhunski kvalitet leda za restorane, klubove,
               kafiće, prodavnice i sve koji žele savršeno rashlađeno piće.
-              Isporuka u Zaječaru i celoj Istočnoj Srbiji.
             </p>
           </div>
           <Image

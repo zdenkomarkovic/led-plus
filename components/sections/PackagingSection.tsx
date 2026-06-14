@@ -68,7 +68,7 @@ export default function PackagingSection() {
               </div>
               <p className="text-navy/60 mb-6">
                 Savršeno za svakodnevnu upotrebu. Lako za nošenje, ručka na kesi. Dostupno u
-                prodavnicama i direktnom dostavom.
+                prodavnicama.
               </p>
               <ul className="space-y-2 mb-8 flex-1">
                 {features2kg.map((f) => (
