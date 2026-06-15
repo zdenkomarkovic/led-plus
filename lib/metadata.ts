@@ -14,6 +14,8 @@ interface BuildMetadataOptions {
   type?: "website" | "article";
   /** Datum objave (za blog postove) */
   publishedTime?: string;
+  /** Ako true, naslov se ne formatira kroz template (%s | Site Name) */
+  absoluteTitle?: boolean;
 }
 
 /**
@@ -35,13 +37,18 @@ export function buildMetadata({
   noIndex = false,
   type = "website",
   publishedTime,
+  absoluteTitle = false,
 }: BuildMetadataOptions = {}): Metadata {
-  const fullTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
+  const fullTitle = absoluteTitle
+    ? title ?? SITE_NAME
+    : title
+      ? `${title} | ${SITE_NAME}`
+      : SITE_NAME;
   const canonicalUrl = url ?? SITE_URL;
-  const ogImage = image ?? `${SITE_URL}/og-image.png`; // Dodaj og-image.png u /public
+  const ogImage = image ?? `${SITE_URL}/og-image.png`;
 
   return {
-    title: fullTitle,
+    title: absoluteTitle ? { absolute: fullTitle } : fullTitle,
     description,
     metadataBase: new URL(SITE_URL),
     alternates: {

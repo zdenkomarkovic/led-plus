@@ -15,6 +15,7 @@ export const metadata = buildMetadata({
   title: "LED Plus – Kristalno čist led za rashladu pića",
   description:
     "LED Plus proizvodi i dostavlja kristalno čist led za restorane, kafiće, klubove i prodavnice u Zaječaru, Boru, Knjaževcu, Sokobanji, Negotinu i celoj Istočnoj Srbiji.",
+  absoluteTitle: true,
 });
 
 export default function HomePage() {
