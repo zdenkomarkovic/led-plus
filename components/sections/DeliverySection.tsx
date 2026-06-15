@@ -70,17 +70,6 @@ export default function DeliverySection() {
               className="w-full h-auto object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-6">
-              <div className="inline-flex items-center gap-3 bg-navy-deep/80 backdrop-blur-sm border border-white/20 rounded-xl px-5 py-3">
-                <TruckIcon />
-                <div>
-                  <div className="text-white font-bold text-sm">
-                    Dostupno svaki dan
-                  </div>
-                  <div className="text-accent text-xs">{PHONE_DISPLAY}</div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
