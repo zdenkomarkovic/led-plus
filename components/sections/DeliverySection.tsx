@@ -59,25 +59,6 @@ export default function DeliverySection() {
               ))}
             </div>
 
-            <div className="flex flex-wrap gap-4">
-              <a
-                href={`tel:${PHONE}`}
-                className="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white font-bold px-6 py-3.5 rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-primary/25 uppercase tracking-wide"
-                style={{ fontFamily: "var(--font-barlow), sans-serif" }}
-              >
-                <PhoneIcon />
-                POZOVI ODMAH
-              </a>
-              <a
-                href={WHATSAPP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 border-2 border-primary hover:bg-primary hover:text-white text-primary font-bold px-6 py-3.5 rounded-xl transition-all duration-200 uppercase tracking-wide"
-                style={{ fontFamily: "var(--font-barlow), sans-serif" }}
-              >
-                WHATSAPP
-              </a>
-            </div>
           </div>
 
           <div className="relative rounded-2xl overflow-hidden shadow-2xl">

@@ -2,7 +2,6 @@ import Image from "next/image";
 const features2kg = [
   "Kristalno čist, bez mirisa i aditiva",
   "Praktično za nošenje – ručka na kesi",
-  "Dostupno u Zaječaru i okolini",
 ];
 
 const features4kg = [
