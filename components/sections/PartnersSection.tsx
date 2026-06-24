@@ -10,6 +10,10 @@ const partners = [
     alt: "LED Plus u Tekijanka marketima – led za rashladu pića",
   },
   {
+    src: "/partneri/20260624_160627.jpg",
+    alt: "LED Plus partner",
+  },
+  {
     src: "/sova.jpg",
     alt: "LED Plus u Sova marketima – led za rashladu pića",
   },
